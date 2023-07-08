@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="FirstPage">
+      <div class="RPS-header-div">
+        <div class="white-border">
+          <div>
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+          </div>
+          <div>
+            <p>COMPUTER</p>
+            <p>SCORE</p>
+            <b id="First-page-Pc-score">0</b>
+          </div>
+          <div>
+            <p>YOUR</p>
+            <p>SCORE</p>
+            <b id="First-page-My-score">0</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="triangle">
+        <div class="first-div">
+          <div class="first-circle click-to-generate" id="first_CR">
+            <img src="./Images/rock.png" alt="rockImage" />
+          </div>
+          <div class="second-circle click-to-generate" id="second_CR">
+            <img src="./Images/scissors.png" alt="" />
+          </div>
+        </div>
+
+        <div class="second-div">
+          <div class="Two-bars"></div>
+          <div class="Two-bars"></div>
+          <div class="top-circle click-to-generate">
+            <img src="./Images/paper.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="rulesBox">
+        <div class="rulesContent">
+          <h2>Game Rules</h2>
+          <ul>
+            <li>Rock beats scissors</li>
+            <li>Paper beats rock</li>
+            <li>Scissors beats paper</li>
+            <li>If both players choose the same, it's a tie</li>
+            <li>Click the cross icon to close</li>
+          </ul>
+        </div>
+        <span class="closeButton">&times;</span>
+      </div>
+
+      <section class="rules-AND-Next">
+        <button class="rulesButton">Rules</button>
+      </section>
+    </header>
+
+    <div id="youWin">
+      <header class="FirstPage">
+        <div class="RPS-header-div">
+          <div class="white-border">
+            <div>
+              <p>ROCK</p>
+              <p>PAPER</p>
+              <p>SCISSORS</p>
+            </div>
+            <div>
+              <p>COMPUTER</p>
+              <p>SCORE</p>
+              <b class="Computer-score">0</b>
+            </div>
+            <div>
+              <p>YOUR</p>
+              <p>SCORE</p>
+              <b class="My-score">0</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="Two-circles">
+          <div>
+            <p id="you-pickedUP-P">YOU PICKED</p>
+            <img
+              id="Winning-page-FIRST-img"
+              src="./Images/pc pick pink.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p id="WIn-Or-Loss-p"></p>
+            <p>AGAINST PC</p>
+            <button><a href="./index.html">PLAY AGAIN</a></button>
+          </div>
+          <div>
+            <p id="PC-picked-Up">PC Picked</p>
+            <img
+              id="Winning-page-SECOND-img"
+              src="./Images/yellow circle.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="rulesBox">
+          <div class="rulesContent">
+            <h2>Game Rules</h2>
+            <ul>
+              <li>Rock beats scissors</li>
+              <li>Paper beats rock</li>
+              <li>Scissors beats paper</li>
+              <li>If both players choose the same, it's a tie</li>
+              <li>Click the cross icon to close</li>
+            </ul>
+          </div>
+          <span class="closeButton">&times;</span>
+        </div>
+
+        <section class="rules-AND-Next">
+          <button class="rulesButton">Rules</button>
+          <button class="Next-page-button">
+            <a href="./WinningPage.html">NEXT</a>
+          </button>
+        </section>
+      </header>
+    </div>
+
+    <div id="YouLost"></div>
+
+    <div id="TieUp"></div>
+  </body>
+</html>
+
+<script src="./index.js"></script>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #8cc461;
+      }
+      #parent {
+        border: 2px solid transparent;
+        width: 80%;
+        height: 60vh;
+        margin: auto;
+        margin-top: 1%;
+      }
+      #stars {
+        border: 2px dotted transparent;
+        width: 60%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+      #stars img {
+        width: 70%;
+        height: 70%;
+      }
+
+      #cup {
+        border: 2px solid transparent;
+        margin-top: 80px;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        position: relative;
+        margin-top: -15%;
+      }
+      #cup img {
+        width: 30%;
+      }
+      #text {
+        border: 2px solid transparent;
+        width: auto;
+        height: auto;
+        text-align: center;
+        color: white;
+        margin: auto;
+        margin-top: 1.5vh;
+        word-spacing: 2px;
+        font-family: roboto;
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        font-size: 4.5rem;
+        letter-spacing: 2px;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin-top: -10px;
+      }
+
+      #text > button {
+        padding: 10px 25px;
+        border-radius: 5px;
+        border-color: transparent;
+        margin-top: 5px;
+      }
+      #text > button a {
+        text-decoration: none;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+      }
+
+
+
+            
+.rules-AND-Next {
+  border: 2px solid transparent;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.rulesContent{
+  padding: 5px;
+  margin-top: 5px;
+}
+
+
+      @media (max-width: 482px) {
+        h1 {
+          font-size: 3rem;
+          letter-spacing: 2px;
+        }
+      }
+      @media (max-width: 324px) {
+        h1 {
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="stars"><img src="./Images/star img.png" alt="" /></div>
+      <div id="cup"><img src="./Images/cup.png" alt="" /></div>
+
+      <div id="text">
+        <h1>HURRAY!!</h1>
+        <h2>YOU WON THE GAME</h2>
+        <button><a href="./index.html"> PLAY AGAIN</a></button>
+      </div>
+    </div>
+
+
+    <div class="rulesBox">
+      <div class="rulesContent">
+        <h2>Game Rules</h2>
+        <ul>
+          <li>Rock beats scissors</li>
+          <li>Paper beats rock</li>
+          <li>Scissors beats paper</li>
+          <li>If both players choose the same, it's a tie</li>
+          <li>Click the cross icon to close</li>
+        </ul>
+      </div>
+      <span class="closeButton">&times;</span>
+    </div>
+
+
+    <section class="rules-AND-Next">
+      <button class="rulesButton">Rules</button>
+      <button class="Next-page-button">
+        <a href="./WinningPage.html">NEXT</a>
+      </button>
+    </section>
+  </body>
+</html>
+
+
+<script src="./index.js"></script>
